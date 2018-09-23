@@ -68,8 +68,9 @@
 						<td>@{{ package.price }}</td>
 						<td>@{{ package.discount }}</td>
 						<td>
-                                <a href="/dashboard/package/@{{ package.id }}" class="btn btn-s btn-info">Edit</a> 
-                                <button class="btn btn-info" @click="delete_package(package.id,index)">Delete</button>
+
+                            <a :href="'/dashboard/package/' + package.id" class="btn btn-s btn-info">Edit</a> 
+							<button class="btn btn-info" @click="delete_package(package.id,index)">Delete</button>
 			</div>
                             </td>
 					</tr>
